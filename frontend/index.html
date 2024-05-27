@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="#" onClick="show('asteroids')">Asteroids</a> | <a href="#" onClick="show('islands')">Islands</a>
+    <div id="asteroids">
+        Asteroids
+        <br/><br/>
+        <input type="button" value="Generate Random Data" onClick="getAsteroidRandomData()">
+        <br/><br/>
+        <span id="data"></span> <input type="button" value="Simulate" onClick="simulateAsteroids()">
+    -> <span id="result"></span>
+    </div>
+    <div id="islands">
+        Islands
+        <br/><br/>
+        <table id="table"></table>
+        <br/>
+        <span id="result"></span>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>
